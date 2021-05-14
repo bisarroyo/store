@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
 
-import A from './components/Header';
+import App from './pages/App';
 
 const container = document.getElementById('App');
 
-ReactDOM.render(<A />, container);
+ReactDOM.render(<App />, container);
