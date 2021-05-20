@@ -8,6 +8,16 @@ const Nav = styled.nav`
   justify-content: space-between;
   .logo {
     padding: 15px 0;
+    font-size: 2rem;
+    margin-right:40px;
+  }
+
+  .main-header {
+    display:flex;
+  }
+
+  .search-header {
+    padding: 10px 0;
   }
 `;
 
