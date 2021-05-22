@@ -3,9 +3,9 @@ import { BiStore } from 'react-icons/bi';
 
 import Nav from './Styles';
 import Burger from '../Burger/Burger';
-import Search from '../../Header/Search/Search';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { children } = props;
   return (
     <Nav>
       <div className='main-header'>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <BiStore />
         </div>
         <div className='search-header'>
-          {(screen.width > 768 && <Search />)}
+          { children }
         </div>
       </div>
       <Burger />

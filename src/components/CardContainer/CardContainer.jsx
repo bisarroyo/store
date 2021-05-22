@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Banner from './Styles';
 
-class CardContainer extends Component {
-  render() {
-    return (
-      <div>
-        <Banner>
-          <div className='main-banner__container'>
-            <img src='' alt='' />
-          </div>
-          <h2>Colección de verano</h2>
-          <p>Mira nuestra nueva colección de verano.</p>
-          <button type='button' className='buttom-shop'>
-            Comprar ahora
-          </button>
-        </Banner>
-      </div>
-    );
-  }
-}
+const CardContainer = (props) => {
+  const { title, description } = props;
+  return (
+    <div>
+      <Banner>
+        <div>
+          <img src='' alt='' />
+        </div>
+        <h2>{ title }</h2>
+        <p>{ description }</p>
+        <button type='button'>
+          Comprar ahora
+        </button>
+      </Banner>
+    </div>
+  );
+};
 
 export default CardContainer;

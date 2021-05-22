@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Header = (props) => {
-  const { children } = props;
+import Navbar from '../../Navbar/Navbar/Navbar';
+import Search from '../Search/Search';
+
+const Header = () => {
   return (
-    <header>
-      { children }
-    </header>
+    <div>
+      <Navbar />
+      <Search />
+    </div>
   );
 };
 

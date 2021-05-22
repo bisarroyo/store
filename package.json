@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": " webpack serve --mode development --env development",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Bismark Arroyo <bis.arroyo@gmail.com>",
@@ -29,6 +29,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.4",
     "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",

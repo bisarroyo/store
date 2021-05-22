@@ -5,9 +5,11 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   li {
-    padding: 18px 10px;
+    padding: 10px 10px;
+    font-size: 1.1rem;
   }
   @media (max-width: 768px) {
+    z-index: 15;
     flex-flow: column nowrap;
     background-color: #0D2538;
     position: fixed;

@@ -10,7 +10,7 @@ const FooterStyle = styled.footer`
   align-items: center;
 
   div {
-    width: 45%;
+    width: 40%;
     height: auto;
     padding: 0 10px;
   }

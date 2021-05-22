@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ImSearch } from 'react-icons/im';
 
+import ShoppingCartIcon from '../ShoppingCart/ShippingCartIcon/ShoppingCartIcon';
 import SearchContainer from './Styles';
 
 class Search extends Component {
@@ -16,6 +17,7 @@ class Search extends Component {
               <ImSearch className='search' />
             </div>
           </div>
+          <ShoppingCartIcon />
         </SearchContainer>
       </div>
     );

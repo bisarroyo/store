@@ -5,9 +5,9 @@ import Ul from './Styles';
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
+      <li>Inicio</li>
+      <li>Categorias</li>
+      <li>Carrito</li>
     </Ul>
   );
 };
