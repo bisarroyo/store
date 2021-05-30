@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { MdShoppingCart } from 'react-icons/md';
 
-import ShoppingCartModal from '../ShoppingCartModal/ShoppingCartModal';
+import ShoppingCartContainer from '../ShoppingCartContainer/ShoppingCartContainer';
+import Modal from '../../Modal/Modal';
 import ShoppingCartIconStyle from './Styles';
 
 const ShoppingcartIcon = () => {
@@ -11,14 +12,19 @@ const ShoppingcartIcon = () => {
     setModalShopping(true);
   };
 
-  // handleCloseModal = e => {
-  //   this.setState({ modalIsOpen: false });
-  // };
+  const handleCloseModal = () => {
+    setModalShopping(false);
+  };
 
   return (
     <ShoppingCartIconStyle>
       <MdShoppingCart className='shopping-icon' onClick={handleOpenModal} />
-      {(ModalShoppin === true && <ShoppingCartModal />)}
+      <Modal
+        isOpen={ModalShoppin}
+        onClose={handleCloseModal}
+      >
+        <ShoppingCartContainer />
+      </Modal>
     </ShoppingCartIconStyle>
   );
 };

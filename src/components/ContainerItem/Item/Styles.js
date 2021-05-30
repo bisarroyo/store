@@ -1,33 +1,37 @@
 import styled from 'styled-components';
 
 const CarrouselItemStyle = styled.div`
-  width: 110px;
+  width: 130px;
   margin: 20px 30px 0px 0px;
-  height: 220px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   div {
-    width:110px;
-    height: 130px;
-    background-color: black;
+    width:130px;
+    height: 150px;
+
+    img {
+      height: 150px;
+      max-width: 130px;
+    }
   }
   h4 {
-    width: 50px;
-    font-size: 1rem;
+    width: 100px;
+    font-size: 0.7rem;
     margin: 5px;
     text-align: start;
   }
 
   p {
-    width: 50px;
+    width: 100px;
     font-size: 1.1rem;
     margin: 5px;
     text-align: start;
   }
   span{
-    width: 50px;
+    width: 100px;
     font-size: 0.9rem;
   }
 
@@ -39,6 +43,11 @@ const CarrouselItemStyle = styled.div`
     div {
       width: 180px;
       height: 250px;
+
+      img {
+        height: 250px;
+        max-width: 180px;
+      }
     }
     h4 {
       width: 150px;
